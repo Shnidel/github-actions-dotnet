@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/GitHubActionsDotNet.Api.Tests/GitHubActionsDotNet.Api.Tests.csproj" />
+  <Project Path="src/GitHubActionsDotNet.Api/GitHubActionsDotNet.Api.csproj" />
+</Solution>
