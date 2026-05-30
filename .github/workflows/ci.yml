@@ -25,5 +25,5 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-          name: my-artifact
+          name: dometrain-artifact
           path: artifacts/ # or path/to/artifact
