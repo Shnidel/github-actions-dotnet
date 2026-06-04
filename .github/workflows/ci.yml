@@ -40,6 +40,13 @@ jobs:
           path: artifacts/ # or path/to/artifact
 
       # Deploy to Azure Web apps
+      - name: Azure login
+        uses: azure/login@v3
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
       - name: 'Deploy to Azure Web App Service'
         uses: azure/webapps-deploy@v2
         with: 
