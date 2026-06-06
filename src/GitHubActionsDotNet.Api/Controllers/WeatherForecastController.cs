@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries =
+    /*private static readonly string[] Summaries =
     [
         "Freezing",
         "Bracing",
@@ -19,6 +19,11 @@ public class WeatherForecastController : ControllerBase
         "Hot",
         "Sweltering",
         "Scorching"
+    ];*/
+
+    private static readonly string[] Summaries =
+    [
+        "Windy",
     ];
 
     [HttpGet(Name = "GetWeatherForecast")]
